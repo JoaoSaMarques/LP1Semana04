@@ -36,5 +36,8 @@ namespace BetterDecorator
             return new string(dec, count) + "" + s 
             + "" + new string(dec, count);
         }
+
+        private static string Decor(string s = "User did not specify args!", 
+        char dec = '=', int count = 3);
     }
 }
