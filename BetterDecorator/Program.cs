@@ -22,6 +22,10 @@ namespace BetterDecorator
 
                 Console.WriteLine(Decor(inputString, decorationChar, count));
             }
+            else
+            {
+                Console.WriteLine(Decor());
+            }
         }
 
         /// <summary>
@@ -31,13 +35,11 @@ namespace BetterDecorator
         /// <param name="dec">the character used</param>
         /// <param name="count">the number of times the char is used</param>
         /// <returns></returns>
-        private static string Decor(string s, char dec, int count)
+        private static string Decor(string s = "User did not specify args!", 
+        char dec = '=', int count = 3)
         {
             return new string(dec, count) + "" + s 
             + "" + new string(dec, count);
         }
-
-        private static string Decor(string s = "User did not specify args!", 
-        char dec = '=', int count = 3);
     }
 }
