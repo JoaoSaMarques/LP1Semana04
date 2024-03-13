@@ -8,6 +8,7 @@ namespace BetterDecorator
         {
             if (args.Length == 3)
             {
+                //Convertibles
                 string inputString = args[0];
                 char decorationChar = args[1][0];
                 int count = int.Parse(args[2]);
@@ -16,6 +17,7 @@ namespace BetterDecorator
             }
         }
 
+        //Counts int
         private static string Decor(string s, char dec, int count)
         {
             return new string(dec, count) + "" + s 
