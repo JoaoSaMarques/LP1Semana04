@@ -10,7 +10,7 @@ namespace BetterDecorator
             Console.WriteLine(Decor("Hello, World!", '.'));
         }
 
-        private static string Decor(string s, char dec)
+        private static string Decor(string s, char dec, int count)
         {
             return $"{dec}{dec}{dec} {s} {dec}{dec}{dec}";
         }
