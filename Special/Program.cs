@@ -8,5 +8,11 @@ namespace Special
         {
             Console.WriteLine("Hello, World!");
         }
+
+        private static int GetSpecial(int n);
+        {
+            return true;
+        }
+
     }
 }
