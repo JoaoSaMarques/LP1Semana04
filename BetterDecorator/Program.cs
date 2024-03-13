@@ -6,13 +6,20 @@ namespace BetterDecorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Decor("Hello, World!", '*'));
-            Console.WriteLine(Decor("Hello, World!", '.'));
+            if (args.Length == 3)
+            {
+                string inputString = args[0];
+                char decorationChar = args[1][0];
+                int count = int.Parse(args[2]);
+
+                Console.WriteLine(Decor(inputString, decorationChar, count));
+            }
         }
 
         private static string Decor(string s, char dec, int count)
         {
-            return $"{dec}{dec}{dec} {s} {dec}{dec}{dec}";
+            return new string(dec, count) + "" + s 
+            + "" + new string(dec, count);
         }
     }
 }
