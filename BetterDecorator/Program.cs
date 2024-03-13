@@ -2,8 +2,15 @@
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// The main class of the file
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Called in the command line arguments
+        /// </summary>
+        /// <param name="args">Called upon when running program</param>
         static void Main(string[] args)
         {
             if (args.Length == 3)
@@ -17,7 +24,13 @@ namespace BetterDecorator
             }
         }
 
-        //Counts int
+        /// <summary>
+        /// Gives special characters to string
+        /// </summary>
+        /// <param name="s">string to give characters</param>
+        /// <param name="dec">the character used</param>
+        /// <param name="count">the number of times the char is used</param>
+        /// <returns></returns>
         private static string Decor(string s, char dec, int count)
         {
             return new string(dec, count) + "" + s 
