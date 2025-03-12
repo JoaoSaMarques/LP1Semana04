@@ -16,6 +16,10 @@ namespace BetterDecorador
                 Console.WriteLine("Please provide a string, a character, and an integer.");
                 return;
             }
+
+            string inputString = args[0];
+            char inputChar = char.Parse(args[1]);
+            int inputCount = int.Parse(args[2]);
         }
     }
 }
