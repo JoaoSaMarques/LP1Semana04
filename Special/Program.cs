@@ -16,6 +16,9 @@ namespace Special
             return GetSpecial(n - 1) + GetSpecial(n - 2) + GetSpecial(n - 3);
         }
 
+        /// <summary>
+        /// The main entry point for the program.
+        /// </summary>
         private static void Main(string[] args)
         {
             Console.Write("Insert n-th number of the special sequence: ");
