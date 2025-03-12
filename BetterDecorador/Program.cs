@@ -4,9 +4,9 @@ namespace BetterDecorador
 {
     public class Program
     {
-        private static void Main(string[] args)
+        private static string Decor(string s, char dec, int count)
         {
-            Console.WriteLine("Hello LP1!");
+            return new string(dec, count) + " " + s + " " + new string(dec, count);
         }
     }
 }
