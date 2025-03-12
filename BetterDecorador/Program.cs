@@ -8,5 +8,14 @@ namespace BetterDecorador
         {
             return new string(dec, count) + " " + s + " " + new string(dec, count);
         }
+
+        private static void Main(string[] args)
+        {
+            if (args.Length < 3)
+            {
+                Console.WriteLine("Please provide a string, a character, and an integer.");
+                return;
+            }
+        }
     }
 }
