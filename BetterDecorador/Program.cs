@@ -20,6 +20,8 @@ namespace BetterDecorador
             string inputString = args[0];
             char inputChar = char.Parse(args[1]);
             int inputCount = int.Parse(args[2]);
+
+            Console.WriteLine(Decor(inputString, inputChar, inputCount));
         }
     }
 }
