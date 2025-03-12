@@ -15,11 +15,17 @@ namespace BetterDecorador
         /// <param name="dec">The character to surround the string.</param>
         /// <param name="count">The number of times the character should be repeated on each side.</param>
         /// <returns>A formatted string with the character surrounding the input string.</returns>
+        
         private static string Decor(string s, char dec, int count)
         {
             return new string(dec, count) + " " + s + " " + new string(dec, count);
         }
 
+        /// <summary>
+        /// The main entry point for the program.
+        /// Accepts command-line arguments: a string, a character, and an integer.
+        /// </summary>
+        /// <param name="args">An array of command-line arguments.</param>
         private static void Main(string[] args)
         {
             if (args.Length < 3)
