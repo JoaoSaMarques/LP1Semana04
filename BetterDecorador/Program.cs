@@ -4,7 +4,7 @@ namespace BetterDecorador
 {
     /// <summary>
     /// This program formats a given string by adding a specified character 
-    // a certain number of times on both sides.
+    /// a certain number of times on both sides.
     /// </summary>
     public class Program
     {
@@ -15,10 +15,18 @@ namespace BetterDecorador
         /// <param name="dec">The character to surround the string.</param>
         /// <param name="count">The number of times the character should be repeated on each side.</param>
         /// <returns>A formatted string with the character surrounding the input string.</returns>
-        
         private static string Decor(string s, char dec, int count)
         {
             return new string(dec, count) + " " + s + " " + new string(dec, count);
+        }
+
+        /// <summary>
+        /// Formats a default message when no command-line arguments are provided.
+        /// </summary>
+        /// <returns>A formatted string with a default message.</returns>
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=', 3);
         }
 
         /// <summary>
@@ -30,7 +38,7 @@ namespace BetterDecorador
         {
             if (args.Length < 3)
             {
-                Console.WriteLine("Please provide a string, a character, and an integer.");
+                Console.WriteLine(Decor());
                 return;
             }
 
