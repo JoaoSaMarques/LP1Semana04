@@ -8,6 +8,11 @@ namespace BetterDecorador
     /// </summary>
     public class Program
     {
+        /// <summary>
+        /// The main entry point for the program.
+        /// Accepts command-line arguments: a string, a character, and an integer.
+        /// </summary>
+        /// <param name="args">An array of command-line arguments.</param>
         private static string Decor(string s, char dec, int count)
         {
             return new string(dec, count) + " " + s + " " + new string(dec, count);
