@@ -2,6 +2,10 @@
 
 namespace BetterDecorador
 {
+    /// <summary>
+    /// This program formats a given string by adding a specified character 
+    // a certain number of times on both sides.
+    /// </summary>
     public class Program
     {
         private static string Decor(string s, char dec, int count)
